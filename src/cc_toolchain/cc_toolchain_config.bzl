@@ -548,7 +548,6 @@ def _linux_gcc_impl(ctx):
             "c++17",
             "colour",
             "determinism",
-            "warnings_as_errors",
             "hardening",
             "build-id",
             "no-canonical-prefixes",
@@ -724,7 +723,6 @@ def _stm32_impl(ctx):
             "stdlib",
             "c++17",
             "colour",
-            "warnings_as_errors",
             "determinism",
             "no-canonical-prefixes",
         ] + ([ctx.attr.cpu] if ctx.attr.cpu in [
